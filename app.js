@@ -13,6 +13,7 @@ mongoose.connect(process.env.MONGODB, {
   reconnectTries: Number.MAX_VALUE,
   useFindAndModify: false,
   useNewUrlParser: true,
+  useUnifiedTopology: true
 })
   // eslint-disable-next-line no-console
   .then(() => console.log('🚀 Connected to the database 🚀'))
